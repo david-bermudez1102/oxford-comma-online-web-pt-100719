@@ -7,7 +7,7 @@ def oxford_comma(array)
     elsif(index>0 && index<(array.length - 1))
       formatted_string << ", #{e}"
     else
-      formatted_string << " and #{e}"
+      formatted_string << ", and #{e}"
     end
   }
 
