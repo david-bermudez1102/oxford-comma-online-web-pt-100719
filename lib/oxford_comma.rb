@@ -1,5 +1,6 @@
 def oxford_comma(array)
   formatted_string = ""
+
   array.each_with_index { |e,index|
     if(index==0)
       formatted_string << e
