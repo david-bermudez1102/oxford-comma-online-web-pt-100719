@@ -7,5 +7,8 @@ def oxford_comma(array)
       formatted_string << ", #{e}"
     else
       formatted_string << " and #{e}"
+    end
   }
+
+  formatted_string
 end
