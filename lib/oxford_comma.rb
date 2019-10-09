@@ -4,8 +4,10 @@ def oxford_comma(array)
   array.each_with_index { |e,index|
     if(index==0)
       formatted_string << e
-    elsif(index>0 && index<(array.length - 1))
+    elsif(index>0 && index<(array.length - 1) && array.length>2)
       formatted_string << ", #{e}"
+    elsif(index>0 && array.length==2)
+      formatted_string << " and #{e}"
     else
       formatted_string << ", and #{e}"
     end
